@@ -1,0 +1,361 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.224);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0.5em 1em #88304E;
+    background-color: white;
+}
+
+h2 {
+    font-family: "kanit";
+    color: #88304E;
+    cursor: default;
+    
+}
+
+nav {
+  
+}
+
+ul {
+    display: flex;
+    gap: 2.5em;
+}
+
+li {
+     list-style: none;
+}
+
+.links-navbar {
+    text-decoration: none;
+    font-family: kanit;
+    color:#88304E;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.5s ease;
+    position: relative;
+    font-weight: 700;
+}
+
+.links-navbar::after {
+    content: ""; /* Contenido pseudo-elemento */
+    position: absolute; /* Posición absoluta para colocarlo debajo del texto */
+    left: 0;
+    bottom: -2px; /* Espacio entre el texto y el subrayado */
+    width: 100%; /* Ancho completo */
+    height: 2px; /* Grosor del subrayado */
+    background-color: rgb(0, 0, 0); /* Color del subrayado */
+    transform: scale(0); /* Escala vertical inicial (no visible) */
+    transform-origin: bottom; /* Origen de la transformación en la parte inferior */
+    transition: transform 0.5s ease; /* Transición suave para la transformación */
+}
+
+.links-navbar:hover::after {
+        transform: scaleX(1); /* Escala vertical completa al pasar el mouse (subrayado visible) */
+}
+
+main {
+    width: 100%;
+    height: 57vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.cont-box-one {
+    /* width: 50%; */
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding: 0 7em; */
+}
+
+.cont-box-two {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.box-img-phone {
+    display: none;
+}
+
+h1 {
+    width: 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+#style {
+    background: linear-gradient(to left, #E23E57, #88304E, #522546, #311D3F);
+    color: transparent;
+    background-clip: text;
+    display: inline;
+    animation: animated 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-direction: alternate-reverse; */
+    width: 100%;
+}
+
+@keyframes animated {
+    to {
+        background-position: 500px;
+    }
+}
+
+.p-about-me {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 40%;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+span {
+    color: #FF204E;
+}
+
+.img-me {
+    width: 19em;
+    height: 19em;
+    border-radius: 40%;
+    border: 2px solid;
+    /* position: relative;
+    bottom: 0.4em; */
+}
+
+.box-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-skills {
+    border: 3px solid #FF204E;
+    box-shadow: 0px 2px 10px;
+    width: 30em;
+    height: 7em;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+
+.p-skills {
+    font-family: kanit;
+    font-size: 1.6em;
+    /* color: rgb(78, 77, 77); */
+    font-weight: 600;
+}
+
+.icons {
+    width: 50px;
+}
+
+.logo-2 {
+    width: 60px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.logo-2:hover {
+    filter: contrast(200%);
+    
+}
+
+label {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+.bars-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    display: none;
+}
+
+
+.bars-menu span {
+    height: 1.5px;
+    width: 30px;
+    background-color: black;
+    transition: transform 0.3s;
+}
+
+#menu-toggle:checked ~ .bars-menu span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg);
+}
+
+#menu-toggle:checked ~ .bars-menu span:nth-child(2) {
+opacity: 0;
+}
+
+#menu-toggle:checked ~ .bars-menu span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    transform: rotate(225deg);
+} 
+
+.img-phone {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    ul {
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* display: none; */
+        gap: 5;
+        transform: translate(200%);
+        transition: all 0.4s ease;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    label {
+        display: block;
+    }
+    
+    header {
+        justify-content: space-between;
+        padding: 0 3em;
+        position: fixed;
+        width: 80%;
+    }
+
+    nav {
+        padding: 0;
+    }
+ 
+    
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .box-img-phone {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 50vh;
+        margin: 0.4em;
+        padding: 0;
+
+    }
+
+    .cont-box-two {
+        display: none;
+    }
+
+    .img-phone {
+        width: 170px;
+        border: 3px solid;
+        border-radius: 30%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .box {
+        flex-direction: column;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p-about-me {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-box-one {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* margin: 1em; */
+    }
+
+    #menu-toggle:checked ~ ul {
+        /* display: flex; */
+        transform: translateX(0);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.7em;
+    }
+
+    .box-skills {
+        /* width: 220px; */
+    }
+    
+    .cont-skills {
+        width: 300px;
+        height: 52px;
+    }
+
+    .icons {
+        width: 30px;
+        gap: 1;
+    }
+
+    .bars-menu {
+        display: flex;
+    }
+}
