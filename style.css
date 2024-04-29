@@ -386,8 +386,8 @@ opacity: 0;
 }
 
 .box-contact {
-    width: 570px;
-    height: 250px;
+    width: 500px;
+    height: 220px;
     background-color: white;
     border-radius: 8px;
     display: flex;
@@ -654,7 +654,7 @@ html {
 
     .box-description-me {
         width: 320px;
-        height: 655px;
+        height: 725px;
     }
 
     .section-info {
