@@ -16,4 +16,20 @@ function escribirTexto(texto, elemento, index = 0) {
 
 escribirTexto(textoCompleto, textoElemento);
 
+const navToggle = document.querySelector(".bars-menu")
+const navList = document.querySelector(".nav-menu")
+
+navToggle.addEventListener("click", () => {
+  navList.classList.toggle("nav-menu_visible");
+})
+
+if (navList.classlist.contains("nav-menu_visible")) {
+  navToggle.setAttribute("aria-label", "Cerrar Menu)");
+} else {
+  navToggle.setAttribute("aria-label", "Abrir Menu");
+}
+ 
+
+
+
 
