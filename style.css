@@ -234,6 +234,22 @@ input {
     transition: transform 0.3s;
 }
 
+#menu-toggle:checked ~ .bars-menu span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg);
+}
+
+#menu-toggle:checked ~ .bars-menu span:nth-child(2) {
+opacity: 0;
+}
+
+#menu-toggle:checked ~ .bars-menu span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    transform: rotate(225deg);
+} 
+
 .img-phone {
     display: none;
 }
@@ -513,7 +529,7 @@ html {
         line-height: 60px;
         padding: 0 20px;
         background: none;
-
+        
     }
 
     li {
@@ -664,4 +680,6 @@ html {
     .box-contact {
         width: 305px;
     }
+
+    
 }

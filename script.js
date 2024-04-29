@@ -28,6 +28,22 @@ if (navList.classlist.contains("nav-menu_visible")) {
 } else {
   navToggle.setAttribute("aria-label", "Abrir Menu");
 }
+
+const menu = document.querySelector(".nav-menu");
+const cerrarMenu = document.querySelector(".bars-menu");
+
+
+function toggleMenu() {
+  nav-menu.classList.toggle("menu_opened")
+}
+
+const menuLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+
+menuLinks.forEach(menuLink => {
+  menuLink.addEventListener("Click", function() {
+    nav-menu.classList.remove("menu_opened");
+  })
+})
  
 
 
