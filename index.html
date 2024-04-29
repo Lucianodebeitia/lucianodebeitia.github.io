@@ -6,11 +6,12 @@
     <title>Luciano De Beitia | Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="icons/icons8-ordenador-portátil-64 (1).png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h2>L U C H O</h2>
+        <h2>L U C I A N O</h2>
         <nav>
             <input type="checkbox"id="menu-toggle">
             <label for="menu-toggle" class="bars-menu">
@@ -26,15 +27,15 @@
             </label>
 
             <ul>
-                <li><a class="links-navbar" href="">HOME</a></li>
-                <li><a class="links-navbar" href="">ABOUT ME</a></li>
-                <li><a class="links-navbar" href="">PROJECTS</a></li>
-                <li><a class="links-navbar" href="">CONTACT</a></li>
+                <li><a class="links-navbar" href="#home">HOME</a></li>
+                <li><a class="links-navbar" href="#about">ABOUT ME</a></li>
+                <li><a class="links-navbar" href="#projects">PROJECTS</a></li>
+                <li><a class="links-navbar" href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="home">
         <div class="box">
             <div class="cont-box-one">
                 <div class="box-img-phone">
@@ -44,8 +45,8 @@
                <h1 id="style"> Developer.</h1>
                <p class="p-about-me">Hi, I'm <span>Luciano De Beitia.</span>  A passionate Developer from Argentina.</p>
                <div class="box-git-linkedin">
-                  <a href="https://www.linkedin.com/in/luciano-de-beitia-86084b288/" target="_blank"><img class="logo-2" src="icons/logo_linkedin-removebg-preview.png" alt=""></a> 
-                   <a href="https://github.com/Lucianodebeitia" target="_blank"><img class="logo-2" src="icons/logo_github_black-removebg-preview.png" alt=""></a>
+                  <a href="https://www.linkedin.com/in/luciano-de-beitia-86084b288/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+                   <a href="https://github.com/Lucianodebeitia" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
             </div>
 
@@ -53,9 +54,8 @@
                 <img class="img-me" src="icons/Luciano img.jpg" alt="">
             </div>
         </div>
-    </main>
 
-    <div class="box-skills">
+         <div class="box-skills">
         <p class="p-skills">My Skills</p>
         <div class="cont-skills">
             <img class="icons" src="icons/logo js.jpg" alt="">
@@ -65,6 +65,52 @@
             <img class="icons" src="icons/logo github.jpg" alt="">
         </div>
     </div>
-    
+    </main>
+
+    <section class="section-info" id="about">
+        <div class="box-info">
+            <div class="cont-one-info">
+            <h3 class="about-me">About me</h3>
+            <div class="box-description-me">
+                <!-- <h3 class="tittle-box">An enthusiast Web Developer 💻</h3> -->
+                 <p class="prueba">Since I entered the world of technology, I have been fascinated by its ability to transform <span>ideas</span> into reality. and since then, I have been immersed in a continuous process of <span>learning</span> and <span>growth</span>. I am excited by the possibility of facing new challenges and finding creative solutions to complex problems. I firmly believe in the importance of learning, I am always looking for opportunities to expand my <span>knowledge</span>. When I'm not in front of a screen, I enjoy spending time at the gym, reading, or cooking. I believe it is crucial to maintain a work-life balance to maintain creativity and high <span>motivation.</span> I am excited about the <span>opportunities</span> that the future holds for me in the field of programming. My short-term goal is to continue expanding my knowledge and technical skills, exploring new technologies and development methodologies. In the long term, I aspire to contribute to meaningful <span>projects</span> that have a positive impact on society and the world at large.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-projects" id="projects">
+        <div class="box-projects">
+            <div class="cont-box-projects">
+                <h3 class="about-me">Projects</h3>
+                <div class="texto-infinito"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contact" id="contact">
+        <h3 class="contact">Contact</h3>
+        <p class="description-contact">If you are intrested in <span>hiring</span> me, <span>call</span> me, <span>email</span> me or <span>connect</span> and chat with me via LinkedIn!</p>
+       <div class="box-contact">
+        <div class="cont-contact">
+            <div class="icons-contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>+54 113 2121314</p>
+            </div>
+            <div class="icons-contact">
+                <i class="fa-solid fa-envelope"></i>
+                <p>lucianoezequiel30@gmail.com</p>
+            </div>
+            <div class="icons-contact">
+               <i class="fa-brands fa-linkedin"></i>
+               <p>lucianodebeitia</p>
+            </div>
+
+        </div>
+       </div>
+    </section>
+
+   
+    <script src="script.js"></script>
 </body>
 </html>
