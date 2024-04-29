@@ -655,6 +655,9 @@ html {
     .box-description-me {
         width: 320px;
         height: 645px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .section-info {
