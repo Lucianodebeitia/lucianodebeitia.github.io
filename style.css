@@ -683,3 +683,17 @@ html {
 
     
 }
+
+@media (min-width: 700px) {
+    .section-info {
+        height: 100vh;
+    }
+
+    .section-contact {
+        height: 100vh;
+    }
+
+    .section-projects {
+        height: 80vh;
+    }
+}
