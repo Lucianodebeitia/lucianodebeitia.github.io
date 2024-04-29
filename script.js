@@ -16,34 +16,25 @@ function escribirTexto(texto, elemento, index = 0) {
 
 escribirTexto(textoCompleto, textoElemento);
 
-const navToggle = document.querySelector(".bars-menu")
-const navList = document.querySelector(".nav-menu")
+const navToggle = document.querySelector(".bars-menu");
+const navList = document.querySelector(".nav-menu");
 
 navToggle.addEventListener("click", () => {
-  navList.classList.toggle("nav-menu_visible");
-})
+    navList.classList.toggle("nav-menu_visible");
+});
 
-if (navList.classlist.contains("nav-menu_visible")) {
-  navToggle.setAttribute("aria-label", "Cerrar Menu)");
-} else {
-  navToggle.setAttribute("aria-label", "Abrir Menu");
-}
+// Agrega un evento de clic a cada enlace del menú para cerrar el menú al hacer clic
+const menuLinks = document.querySelectorAll(".links-navbar");
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        // Cierra el menú cambiando la clase 'nav-menu_visible'
+        navList.classList.remove("nav-menu_visible");
+    });
+});
 
-const menu = document.querySelector(".nav-menu");
-const cerrarMenu = document.querySelector(".bars-menu");
 
 
-function toggleMenu() {
-  nav-menu.classList.toggle("menu_opened")
-}
 
-const menuLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
-
-menuLinks.forEach(menuLink => {
-  menuLink.addEventListener("Click", function() {
-    nav-menu.classList.remove("menu_opened");
-  })
-})
  
 
 
