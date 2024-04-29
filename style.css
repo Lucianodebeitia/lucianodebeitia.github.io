@@ -630,7 +630,7 @@ html {
 
     .box-description-me {
         width: 320px;
-        height: 700px;
+        height: 655px;
     }
 
     .section-info {
@@ -638,7 +638,7 @@ html {
     }
 
     .section-projects {
-        height: 50vh;
+        height: 60vh;
     }
 
     .section-contact {
