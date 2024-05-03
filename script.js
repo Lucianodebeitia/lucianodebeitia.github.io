@@ -23,14 +23,15 @@ navToggle.addEventListener("click", () => {
     navList.classList.toggle("nav-menu_visible");
 });
 
-// Agrega un evento de clic a cada enlace del menú para cerrar el menú al hacer clic
+
 const menuLinks = document.querySelectorAll(".links-navbar");
 menuLinks.forEach(link => {
     link.addEventListener("click", () => {
-        // Cierra el menú cambiando la clase 'nav-menu_visible'
+        
         navList.classList.remove("nav-menu_visible");
     });
 });
+
 
 
 
