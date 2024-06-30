@@ -591,7 +591,7 @@ html {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .nav-menu {
          /* position: absolute;
         top: 50px;
@@ -659,7 +659,7 @@ html {
         justify-content: space-between;
         padding: 0 3em;
         position: fixed;
-        width: 80%;
+        width: 90%;
         z-index: 2;
 
     }
@@ -795,8 +795,9 @@ html {
         height: 150vh;
     }
 
+
     .box-projects {
-        height: 104vh;
+        height: 96vh;
         width: 85%;
         justify-content: center;
         gap: 50px;
