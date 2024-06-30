@@ -792,11 +792,11 @@ html {
     }
 
     .section-projects {
-        height: 120vh;
+        height: 150vh;
     }
 
     .box-projects {
-        height: 74vh;
+        height: 104vh;
         width: 85%;
         justify-content: center;
         gap: 50px;
