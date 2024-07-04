@@ -594,7 +594,21 @@ html {
     justify-content: center;
 }
 
+.part_one_box_project span {
+  color: #09B6B6
+}
 
+#blue:hover {
+    color: #09B6B6;
+}
+
+#red:hover {
+    color: red;
+}
+
+.box-projects {
+    margin: 0
+}
 
 @media (max-width: 900px) {
     .nav-menu {
