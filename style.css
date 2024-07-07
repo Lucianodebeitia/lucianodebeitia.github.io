@@ -1,15 +1,15 @@
 body {
     padding: 0;
     margin: 0;
-    /* background-color: rgba(128, 128, 128, 0.224); */
+    background-color: rgb(0, 0, 0);
 }
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 0.5em 1em #88304E;
-    background-color: white;
+    box-shadow: 0 0.5em 1em #0079FF;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -17,7 +17,7 @@ header {
 
 h2 {
     font-family: "kanit";
-    color: #FF204E;
+    color: #0079FF;
     cursor: default;
     
 }
@@ -38,7 +38,7 @@ li {
 .links-navbar {
     text-decoration: none;
     font-family: kanit;
-    color:#FF204E;
+    color:#0079FF;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: 0.5s ease;
     position: relative;
@@ -52,7 +52,7 @@ li {
     bottom: -2px; /* Espacio entre el texto y el subrayado */
     width: 100%; /* Ancho completo */
     height: 2px; /* Grosor del subrayado */
-    background-color: #E23E57; /* Color del subrayado */
+    background-color: #2c77cd; /* Color del subrayado */
     transform: scale(0); /* Escala vertical inicial (no visible) */
     transform-origin: bottom; /* Origen de la transformación en la parte inferior */
     transition: transform 0.5s ease; /* Transición suave para la transformación */
@@ -103,7 +103,6 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .box-img-phone {
@@ -120,7 +119,7 @@ h1 {
 }
 
 #style {
-    background: linear-gradient(to left, #E23E57, #88304E, #522546, #311D3F);
+    background: linear-gradient(to left, #0079FF, #0079FF, #2c77cd, #c7e1ff);
     color: transparent;
     background-clip: text;
     display: inline;
@@ -137,15 +136,30 @@ h1 {
     }
 }
 
-main i {
+ .box-git-linkedin a:nth-child(1){
     font-size: 2.2em;
-    color: black;
+    color: #0079FF;
     margin: 0 0.5em;
 }
 
-main i:hover {
-    color: #FF204E;
+.box-git-linkedin a:nth-child(1):hover{
+    color: #0077ff9d;
 }
+
+ .box-git-linkedin a:nth-child(2) {
+    color: white;
+    font-size: 2.2em;
+}
+
+.box-git-linkedin a:nth-child(2):hover {
+    color: #0079FF;
+}
+
+main p {
+    color: white;
+}
+
+
 
 
 .p-about-me {
@@ -156,16 +170,18 @@ main i:hover {
 }
 
 span {
-    color: #FF204E;
+    color: #0079FF;
 }
 
 .img-me {
     width: 19em;
     height: 19em;
     border-radius: 40%;
-    border: 2px solid;
     /* position: relative;
     bottom: 0.4em; */
+    border: 3px solid #0079FF;
+    box-shadow: 0px 2px 10px;
+    color: #ACACAC;
 }
 
 .box-skills {
@@ -177,7 +193,7 @@ span {
 }
 
 .cont-skills {
-    border: 3px solid #FF204E;
+    border: 3px solid #0079FF;
     box-shadow: 0px 2px 10px;
     width: 30em;
     height: 7em;
@@ -185,15 +201,18 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    color: #ACACAC;
 }
 
 
 .p-skills {
-    font-family: kanit;
+    font-family: "kanit";
     font-size: 1.6em;
     /* color: rgb(78, 77, 77); */
     font-weight: 600;
+    /* color: #ACACAC; */
+    text-transform: uppercase;
 }
 
 .icons {
@@ -229,9 +248,9 @@ input {
 
 
 .bars-menu span {
-    height: 1.5px;
+    height: 2.5px;
     width: 30px;
-    background-color: black;
+    background-color: #0079FF;
     transition: transform 0.3s;
 }
 
@@ -304,11 +323,12 @@ opacity: 0;
 }
 
 .about-me {
-    color: #E23E57;
+    color: #2c77cd;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 2.2em;
     position: relative;
   display: inline-block;
+  
 }
 
 .about-me::after {
@@ -318,7 +338,7 @@ opacity: 0;
     bottom: -2px; /* Distancia del subrayado con respecto al texto */
     width: 100%; /* Ancho inicial del subrayado */
     height: 2px; /* Grosor del subrayado */
-    background-color: #FF204E; /* Color del subrayado */
+    background-color: #2c77cd; /* Color del subrayado */
     transform: scaleX(0); /* Escala horizontal inicial del subrayado (invisible) */
     transform-origin: bottom left;
     transition: transform 0.3s ease; /* Transición suave de la animación */
@@ -344,8 +364,10 @@ opacity: 0;
     border: 1px solid white;
     background-color: white;
     padding: 1.5em;
-    border: 3px solid #FF204E;
+    border: 3px solid #2c77cd;
     box-shadow: 0px 2px 10px;
+    color: #ACACAC;
+    background-color: black;
 
 }
 
@@ -363,7 +385,7 @@ opacity: 0;
     height: 50vh;
     /* background-color: #522546; */
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #080808;
     
 }
 
@@ -404,7 +426,11 @@ opacity: 0;
     width: 350px;
     height: 200px;
     border-radius: 10px;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 2px 10px;
 }
+
+
 
 .cont-box-projects {
     display: flex;
@@ -428,19 +454,20 @@ opacity: 0;
 .box-contact {
     width: 500px;
     height: 220px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2em;
-    border: 3px solid #FF204E;
+    border: 3px solid #2c77cd;
     box-shadow: 0px 2px 10px;
+    color: #ACACAC;
 }
 
 .contact {
-    color: #E23E57;
+    color: #0079FF;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 2.2em;
     margin: 0;
@@ -455,7 +482,7 @@ opacity: 0;
     bottom: -2px; /* Distancia del subrayado con respecto al texto */
     width: 100%; /* Ancho inicial del subrayado */
     height: 2px; /* Grosor del subrayado */
-    background-color: #FF204E; /* Color del subrayado */
+    background-color: #0079FF; /* Color del subrayado */
     transform: scaleX(0); /* Escala horizontal inicial del subrayado (invisible) */
     transform-origin: bottom left;
     transition: transform 0.3s ease; /* Transición suave de la animación */
@@ -481,36 +508,41 @@ opacity: 0;
     align-items: center;
 }
 
+
+
 .description-contact {
     font-family: kanit;
     width: 30%;
     font-size: 1.3em;
     text-align: center;
+    color: #ACACAC;
 }
 
 .box-contact i {
-    font-size: 30px;
+    font-size: 35px;
+    color: #0079FF;
 }
 
 .box-contact p {
     font-family: kanit;
     font-size: 1.1em;
+    color: #0079FF;
 }
 
 .box-contact i:hover {
-    color: #FF204E;
+    color: #0079FF;
 }
 
 .box-contact i:hover ~ p {
-    color: #FF204E;
+    color: #ACACAC;
 }
 
 .box-contact p:hover {
-    color: #FF204E;
+    color: #ACACAC;
 }
 
 .box-contact p:hover ~ i {
-    color: #FF204E;
+    color: #ACACAC;
 }
 
 .icons-contact {
@@ -539,11 +571,14 @@ html {
     height: 23rem;
     border-radius: 8px;
     display: flex;
-    background-color: #fff; /* Fondo blanco */
-    border: 1px solid #ddd; /* Borde fino */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    border-radius: 18px; /* Bordes redondeados opcionales */
-    padding: 0 10px
+    background-color: #000000; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 18px; 
+    padding: 0 10px;
+    border: 3px solid #2c77cd;
+    box-shadow: 0px 2px 10px;
+    color: #ACACAC;
 }
 
 .box-projects:hover {
@@ -575,7 +610,7 @@ html {
     font-family: "kanit";
     font-size: 1.4rem;
     margin: 0;
-    color: red;
+    color: #2c77cd;
 }
 
 .h3-2-skills {
@@ -610,7 +645,7 @@ html {
 }
 
 #red:hover {
-    color: red;
+    color: #09B6B6;
 }
 
 .box-projects {
@@ -628,7 +663,16 @@ html {
     cursor: pointer;
 }
 
+.box_repositorio i {
+    color: #2c77cd
+}
+
+/* .cont-contact p:hover {
+    color: #ACACAC;
+} */
+
 @media (max-width: 900px) {
+
     .nav-menu {
          /* position: absolute;
         top: 50px;
@@ -648,7 +692,7 @@ html {
         flex-direction: column;
         align-items: center;
         margin-right: 20px;
-        background-color: white;
+        background-color: rgb(0, 0, 0);
         position: fixed;
         left: 0;
         top: 40px;
@@ -658,6 +702,7 @@ html {
         overflow-y: auto;
         left: 100%;
         transition: left 0.3s;
+        gap: 0;
     }
 
     .nav-menu_visible {
@@ -685,7 +730,7 @@ html {
     } */
 
     body {
-        background-color: white;
+        background-color: black;
     }
 
     /* label {
@@ -737,7 +782,9 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        border: 3px solid #0079FF;
+        box-shadow: 0px 2px 10px;
+        color: #ACACAC;
     }
 
     .box {
@@ -829,12 +876,12 @@ html {
     }
 
     .section-projects {
-        height: 150vh;
+        height: 110vh;
     }
 
 
     .box-projects {
-        height: 85vh;
+        height: 80vh;
         width: 85%;
         justify-content: center;
         gap: 50px;
