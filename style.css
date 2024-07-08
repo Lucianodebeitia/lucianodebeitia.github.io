@@ -553,7 +553,7 @@ opacity: 0;
 
 .icons-contact a {
     text-decoration: none;
-    
+
 }
 
 section [id] {
@@ -702,14 +702,7 @@ html {
 
 
 
-@keyframes move-right {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(680px); /* Ajusta según el ancho del contenedor */
-    }
-}
+/*  */
 
 @media (max-width: 900px) {
 
@@ -865,13 +858,16 @@ html {
     }
     
     .cont-skills {
-        width: 300px;
-        height: 52px;
+        width: 200px;
+        height: 62px;
+        align-items: center;
+        gap: 10px!important;
     }
 
     .icons {
         width: 35px;
-        /* gap: 1; */
+        /* margin-right: 50px;  */
+    
     }
 
     .bars-menu {

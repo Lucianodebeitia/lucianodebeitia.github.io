@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const imageWidth = images[0].offsetWidth; // Supone que todas las imágenes tienen el mismo ancho
     const margin = 10;
 
+    
+
     images.forEach((img, index) => {
         img.style.left = `${index * imageWidth}px`; // Posiciona las imágenes en una fila continua
     });
