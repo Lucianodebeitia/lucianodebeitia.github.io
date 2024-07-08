@@ -858,16 +858,16 @@ html {
     }
     
     .cont-skills {
-        width: 200px;
+        width: 300px;
         height: 62px;
-        align-items: center;
-        gap: 10px!important;
+        /* align-items: center; */
+        /* gap: 10px!important; */
     }
 
     .icons {
         width: 35px;
         /* margin-right: 50px;  */
-    
+        position: static;
     }
 
     .bars-menu {

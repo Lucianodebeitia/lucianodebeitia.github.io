@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const containerWidth = document.querySelector('.cont-skills').offsetWidth;
     const imageWidth = images[0].offsetWidth; // Supone que todas las imágenes tienen el mismo ancho
     const margin = 10;
+    
 
     
 
