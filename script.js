@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function animateImages() {
         images.forEach((img) => {
             const currentLeft = parseInt(img.style.left, 10);
-            const newLeft = currentLeft - 2; // Ajusta la velocidad del movimiento
+            const newLeft = currentLeft - 1; // Ajusta la velocidad del movimiento
             img.style.left = `${newLeft}px`;
 
             // Si la imagen ha salido completamente del contenedor, muévela al final
