@@ -707,7 +707,6 @@ html {
 .box_cv {
     width: 9.8rem;
     height: 3rem;
-    border: 1px solid grey;
     display: flex;
     justify-content: center;
     align-items: center;
