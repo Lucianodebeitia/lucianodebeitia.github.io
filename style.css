@@ -698,11 +698,81 @@ html {
 
 
 
+.box-git-linkedin {
+    display: flex;
+    align-items: center;
+}
+
+
+.box_cv {
+    width: 9.8rem;
+    height: 3rem;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.95 ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_cv:hover {
+    transform: scale(1,1);
+}
+
+.box_cv a {
+    font-size: 1rem!important;
+    text-decoration: none;
+    font-family: "kanit";
+    color: #ACACAC!important;
+    position: relative;
+    padding: 13px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #050d16, #0a2424, #2c77cd, #0a2a2a);
+    background-size: 400%;
+    animation: gradientAnimation 9s ease infinite;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.box_cv::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: -5px;
+    background: inherit;
+    background-size: inherit;
+    /* filter: blur(15px); */
+    z-index: -1;
+    border-radius: 10px;
+    /* animation: inherit; */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position:  100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 
-
-/*  */
 
 @media (max-width: 900px) {
 
@@ -870,6 +940,8 @@ html {
         position: static;
     }
 
+  
+
     .bars-menu {
         display: flex;
     }
@@ -942,6 +1014,10 @@ html {
     .box-skills-projects img {
         width: 30px;
         height: 30px;
+    }
+
+    .cont-skills {
+        width: 370px;
     }
     
 }
