@@ -464,6 +464,7 @@ opacity: 0;
     border: 3px solid #2c77cd;
     box-shadow: 0px 2px 10px;
     color: #ACACAC;
+    margin: 20px 0;
 }
 
 .contact {
@@ -512,7 +513,7 @@ opacity: 0;
 
 .description-contact {
     font-family: kanit;
-    width: 30%;
+    width: 80%;
     font-size: 1.3em;
     text-align: center;
     color: #ACACAC;
@@ -544,6 +545,8 @@ opacity: 0;
 .box-contact p:hover ~ i {
     color: #ACACAC;
 }
+
+
 
 .icons-contact {
     display: flex;
@@ -769,6 +772,28 @@ html {
         background-position: 0% 50%;
     }
 }
+
+.cont-contact {
+    flex-direction: row;
+    gap: 50px;
+}
+
+.icons-contact {
+    /* border: 1px solid white;
+    width: 7rem;
+    height: 4rem;
+    border-radius: 8px; */
+    transition: 0.95 ease;
+}
+
+.icons-contact:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
 
 
 
