@@ -798,9 +798,21 @@ html {
 
 
 
+#tittle-almacen {
+    color: #f9bc60!important;
+}
 
+#tittle-coto {
+    color: red;
+}
 
+#red {
+    color: red;
+}
 
+#yelw {
+    color: #f9bc60;
+}
 
 
 @media (max-width: 900px) {
@@ -855,6 +867,8 @@ html {
     .links-navbar {
 
     }
+
+   
 
 
     /* #menu-toggle, ul:checked {
