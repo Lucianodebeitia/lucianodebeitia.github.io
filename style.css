@@ -788,6 +788,11 @@ html {
 
 .icons-contact:hover {
   transform: scale(1.1);
+  color: #ACACAC;
+}
+
+.icons-contact i:hover {
+  color: #ACACAC;
 }
 
 
