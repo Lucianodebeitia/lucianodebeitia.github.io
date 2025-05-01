@@ -760,6 +760,8 @@ html {
     /* animation: inherit; */
 }
 
+
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -1075,6 +1077,6 @@ html {
     }
 
     .section-projects {
-        height: 80vh;
+        height: 120vh;
     }
 }
